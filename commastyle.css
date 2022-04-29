@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@font-face { font-family:  'star';
+    src: url('font/PFStardust1.4.otf');
+}
+
+@font-face { font-family:  'pixel';
+    src: url('font/pixelroborobo.otf');
+}
+
+/* 전체설정 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+ul { display: block;
+    list-style: none;
+}
+
+li  {margin-bottom: 45.9%;
+    margin-left: 22%;}
+
+li a {float: left;
+    text-decoration: none;
+    color: #000;
+    font-family: 'pixel';
+    font-size: 46px;
+    text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+    padding-left: 5%;
+    font-family: 'pixel';}
+
+
+
+.commabox {
+            width: 1440px;
+            height: auto;
+            text-align: center;}
+
+.commabox img {position: absolute;
+                display: block;}
+
+                .commabox .bubble {left: 10%;
+                    top: 2%;
+                    height: 88%;}
+
+.commabox .indeximg {left: 15%;
+                    top: 11%;
+                    width: 370px;}
+
+.commabox .indeximg:hover {opacity: 0.7;}
+
+.commabox .brandimg {left:34.5%;
+                    top:11%;
+                    width: 340px;}
+
+.commabox .brandimg:hover {opacity: 0.7;}
+
+.commabox .productimg {left:52.5%;
+                    top:11%;
+                    width: 340px;}
+
+.commabox .productimg:hover {opacity: 0.7;}
+    
+.commabox .noticeimg {left:70.5%;
+    top:11%;
+    width: 340px;}
+
+.commabox .noticeimg:hover {opacity: 0.7;}
+
+.commabox .giveimg {left:70.5%;
+    top:37%;
+    width: 340px;}
+
+.commabox .giveimg:hover {opacity: 0.7;}
+
+.info:hover a {color: #ED5050;}
+.comma9 a {color: #F8A355;}
+.aimyon:hover a {color: #FD69E5;}
+.archive:hover a {color: #4C53FC;}
+
+.duckbaby {margin-left:90%;
+    margin-bottom: 4%;
+    width: 1440px;
+    height: 100%;}
+
+.duckbaby .duck {position: absolute;
+                    bottom: 5%;
+    animation:ani 0.5s infinite alternate;  
+}
+@keyframes ani{
+0%{transform:translate(0,0);}
+100%{transform:translate(0,4px);}}
+
+.duckbaby .btxt {bottom: 19%;
+                left: 78%;
+                position: absolute;}
+            /* 글자 깜빡이기 "클릭하여 시작하기" */
+    @keyframes blink-effect { 50% { opacity: 0; } } 
+    .btxt { animation: blink-effect 1s step-end infinite;}

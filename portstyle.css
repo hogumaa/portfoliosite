@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@font-face { font-family:  'star';
+    src: url('font/PFStardust1.4.otf');
+}
+
+@font-face { font-family:  'pixel';
+    src: url('font/pixelroborobo.otf');
+}
+
+/* 전체설정 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a { float: left;
+    text-decoration: none;
+    color: #000;
+    font-family: 'pixel';
+    font-size: 46px;
+    text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+    padding-left: 5%;
+    z-index: 10;
+}
+
+
+
+
+img {
+    vertical-align: bottom;
+    border: none;
+}
+
+#imgbox {position: relative;}
+
+.txt {margin-left: 60%;
+        margin-bottom: -34%;}
+
+.infotxt {margin-left: 60%;
+    margin-bottom: -33%;
+    display: none;}
+
+.commatxt {margin-left: 60%;
+    margin-bottom: -33%;
+    display: none;}
+
+.aimyontxt {margin-left: 60%;
+    margin-bottom: -31%;
+    display: none;} 
+
+.archivetxt {margin-left: 60%;
+    margin-bottom: -30%;
+    display: none;}
+
+.menu .info:hover a {color: #ED5050;}
+.menu .info:hover .infotxt {display: block;}
+.comma9:hover a {color: #F8A355;}
+.aimyon:hover a {color: #FD69E5;}
+.archive:hover a {color: #4C53FC;}
+
+
+
+
+.prin {margin-left: 75%;
+        margin-bottom: -48.5%;
+    /* 둥둥 떠다니는 애니메이션 */
+    animation:ani 0.5s infinite alternate;  
+}
+@keyframes ani{
+0%{transform:translate(0,0);}
+100%{transform:translate(0,4px);}}
+
+ul {
+    list-style: none;
+}
+
+li  {margin-bottom: 44%;
+    margin-left: 22%;}
+
+p {font-family: 'star';}
+
+
+
+.duckbaby img {position: absolute;
+                right: 80%;
+                bottom: -2200%;}
+
+.duckbaby .duck {animation:ani 0.5s infinite alternate;  
+}
+@keyframes ani{
+0%{transform:translate(0,0);}
+100%{transform:translate(0,4px);}}
+
+.duckbaby .btxt {bottom: -1800%;
+                left: 16% ;}
